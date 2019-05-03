@@ -1,0 +1,33 @@
+<html>
+<head>
+<style>
+body{
+background-color:khaki;
+text-align:center;
+font-size:15px;}
+h1{
+color:darkviolet;
+font-size:40px;}
+</head>
+</style>
+<body>
+<h1>Change Password</h1>
+<form Name=Password>
+<h2> Admin name   : <input Name=Admin name> <br><h2>
+<h2> Admin id     : <input name=Admin name> <br><h2>
+<h2> Old password : <input Name=OldPassword> <br> <h2>
+<h2>New password  : <input Name=NewPassword> <br><h2>
+ <input type=button onclick="alert('your password has been changed.')" Value="Change Password">
+
+</form>        
+
+<script language=vbscript>
+ Function ChangePassword()
+  Set Server = CreateObject("UserManager.Server")
+  Server.Select ""
+  Server.ChangePassword document.forms.Password.OldPassword.Value, document.forms.Password.NewPassword.Value
+  MsgBox "Password was changed to " & document.forms.Password.NewPassword.Value
+ End Function
+</script>
+
+</body>

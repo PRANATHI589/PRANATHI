@@ -1,0 +1,81 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("table").hide();
+    });
+    $("#show").click(function(){
+        $("table").show();
+    });
+});
+</script>
+<style>
+<!--#myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: khaki;
+    margin-top: 20px;
+}-->
+body{background-color:khaki;}
+h1{color:darkviolet;
+text-align:center;
+font-size:35px;}
+.button {
+    background-color: green;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button1{padding: 10px 24px;}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+</head>
+</style>
+<body>
+<h1> Employee details </h1>
+<h2> Employee name   : <input name=Employee<br><h2>
+<h2> Designation : <input name=Designation> <br><h2>
+<button class="button button1">add</button>
+
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+
+<div id="myDIV">
+<table>
+  <tr>
+    <th>Emp name</th>
+    <th>Email</th>
+    <th>Contact number</th>
+  </tr>
+  <tr>
+    <td>   V.Pranathi</td>
+    <td>1234@gmail.com</td>
+    <td>7766889944</td>
+  </tr>
+<tr>
+    <td>V.Pranatvi</td>
+    <td>1235@gmail.com</td>
+    <td>7767889944</td>
+  </tr>
+</div>
+
+<!--<p><b>Note:</b> The element will not take up any space when the display property set to "none".</p>-->
+
+
+
+</body>
+</html>
+

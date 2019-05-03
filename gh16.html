@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+
+<style> 
+.button3 {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: lightskyblue;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+h2{color:brown;}
+body{background-color:lightblue;}
+h1{color:navy;	
+text-align:center;
+font-size:35px;}
+.button {
+    background-color: green;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button1{padding: 10px 24px;}
+.button11{ background-color: red;}
+</style>
+</head>
+<body>
+<h1>Leave status</h1>
+<div id="flip">Click on me to know your leave status</div>
+<div id="panel"> Your leave is approved!</div>
+<a href="easypage1.html" class="button3">back</a>
+</body>
+</html>

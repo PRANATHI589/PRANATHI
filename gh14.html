@@ -1,0 +1,147 @@
+<html>
+<head>
+<style>
+.button3 {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+h2{color:brown;}
+body{background-color:lightblue;}
+h1{color:navy;	
+text-align:center;
+font-size:35px;}
+.button {
+    background-color: green;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button1{padding: 10px 24px;}
+.button11{ background-color: red;}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: coral;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: coral;
+}
+
+</head>
+</style>
+<body>
+<h1>  Apply leaves </h1>
+<h2> Employee name   : <input name= Employee name> <br><h2>
+<h2> Employee id     : <input name=Employee id> <br><h2>
+<h2> No. of days     : <input name=No. of days> <br><h2>
+<h2> From date       : <input name=From date > <br><h2>
+<h2> To date         : <input name=To date > <br><h2>
+<h2> Employee dept   : <input name=Employee dept> <br><h2>
+
+<h2>Types of leaves:</h2>
+<label class="container">Maternity leave
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Special leave
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Sick leave
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Half day leave
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+
+<button class="button button1">apply</button>
+<a href="easypage1.html" class="button3">back</a>
+<button class="button11 button1">cancel</button>
+
+</body>
+</html>
